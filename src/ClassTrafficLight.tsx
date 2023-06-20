@@ -12,10 +12,10 @@ export class ClassTrafficLight extends Component<colorProps> {
 
   nextLight = () => {
     const { lightColorIndex } = this.state;
-    if (lightColorIndex < 2) {
-      this.setState({ lightColorIndex: lightColorIndex + 1 });
+    if (lightColorIndex > 0) {
+      this.setState({ lightColorIndex: lightColorIndex -1 });
     } else {
-      this.setState({ lightColorIndex: 0 });
+      this.setState({ lightColorIndex: 2 });
     }
   };
 

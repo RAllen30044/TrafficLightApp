@@ -8,10 +8,10 @@ export const FunctionalTrafficLight = ({ lightColor }: colorProps) => {
   const [lightColorIndex, setLightColorIndex] = useState(0);
 
   const nextLight = () => {
-    if (lightColorIndex < 2) {
-      setLightColorIndex(lightColorIndex + 1);
+    if (lightColorIndex > 0) {
+      setLightColorIndex(lightColorIndex - 1);
     } else {
-      setLightColorIndex(0);
+      setLightColorIndex(2);
     }
   };
 
