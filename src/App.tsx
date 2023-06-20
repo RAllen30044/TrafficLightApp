@@ -1,6 +1,7 @@
 import "./App.css";
 import { ClassTrafficLight } from "./ClassTrafficLight";
 import { FunctionalTrafficLight } from "./FunctionalTrafficLight";
+import { LightColor } from "./LightColor";
 
 function App() {
   return (
@@ -9,10 +10,10 @@ function App() {
         <h1>Traffic light App</h1>
         <div className="container">
           <div className="left">
-            <FunctionalTrafficLight />
+            <FunctionalTrafficLight lightColor={LightColor} />
           </div>
           <div className="right">
-            <ClassTrafficLight />
+            <ClassTrafficLight lightColor={LightColor} />
           </div>
         </div>
       </main>
